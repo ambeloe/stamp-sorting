@@ -5,7 +5,7 @@ import os
 
 import stampextract
 
-in_ext = ".jpg"
+in_ext = ".JPG"
 sdir = "Z:/pogs/stamp/in/"
 odir = "Z:/pogs/stamp/out/"
 
@@ -24,7 +24,7 @@ for i in range(0, len(imgs)):
         problem_images.append(imgs[i])
     for i in range(0, len(stamps)):
         print("    saving stamp #" + str(imnum))
-        cv2.imwrite(odir + str(imnum) + ".png", i)
+        cv2.imwrite(odir + str(imnum) + ".png", stamps[i])
         imnum += 1
 
 if len(problem_images) > 0:
